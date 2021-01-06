@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/btn_calc_num_color</item>
+        <item name="colorPrimaryDark">@color/btn_calc_operation_color</item>
+        <item name="colorAccent">@color/btn_calc_operation_color</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/dark_back</item>
+    </style>
+    <style name="AppThemeWithBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/btn_calc_num_color</item>
+        <item name="colorPrimaryDark">@color/btn_calc_operation_color</item>
+        <item name="colorAccent">@color/btn_calc_operation_color</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/dark_back</item>
+    </style>
+    <style name="BtnTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/btn_calc_operation_color</item>
+        <item name="colorPrimaryDark">@color/btn_calc_operation_color</item>
+        <item name="colorAccent">@color/btn_calc_operation_color</item>
+        <item name="android:background">@drawable/back_operation_num</item>
+        <item name="android:radius">30dp</item>
+    </style>
+    <style name="AppTheme.NavigationView">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+</resources>

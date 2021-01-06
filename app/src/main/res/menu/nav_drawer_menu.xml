@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/safe_item"
+        android:icon="@drawable/safe"
+        android:title="@string/safe_option" />
+    <item
+        android:id="@+id/browser_item"
+        android:icon="@drawable/browser"
+        android:title="@string/browser_option" />
+    <item
+        android:id="@+id/trash_item"
+        android:icon="@drawable/trash"
+        android:title="@string/trash_option" />
+    <item
+        android:id="@+id/settings_item"
+        android:icon="@drawable/settings"
+        android:title="@string/settings_option" />
+    <item
+        android:id="@+id/about_item"
+        android:icon="@drawable/about"
+        android:title="@string/about_option" />
+    <item
+        android:id="@+id/theme_item"
+        android:icon="@drawable/theme_night"
+        android:title="@string/dark_theme_option" />
+</menu>

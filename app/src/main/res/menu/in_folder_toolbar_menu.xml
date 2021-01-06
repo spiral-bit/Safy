@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/delete_item"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete_folder_option" />
+    <item
+        android:id="@+id/rename_item"
+        android:icon="@drawable/ic_rename"
+        android:title="@string/rename_folder_option" />
+</menu>

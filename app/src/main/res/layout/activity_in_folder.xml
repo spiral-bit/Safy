@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_back"
+    tools:context=".views.InFolderActivity">
+
+    <ImageView
+        android:id="@+id/in_folder_palette_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/folder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_add_img_main"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:background="@drawable/fab_shape"
+        android:padding="@dimen/_5sdp"
+        android:paddingBottom="100dp"
+        android:src="@drawable/add_img"
+        android:translationZ="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/in_folder_images_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/in_folder_palette_view"
+        tools:listitem="@layout/image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

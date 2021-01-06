@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_back"
+    tools:context=".views.LockActivity">
+
+    <TextView
+        android:id="@+id/lock_safy_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/safy_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/oswald_bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp" />
+
+    <TextView
+        android:id="@+id/lock_help_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/set_graphic_key_label"
+        android:fontFamily="@font/oswald"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/lock_safy_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/lock_pattern_view"
+        android:layout_width="400dp"
+        android:layout_height="500dp"
+        app:layout_constraintTop_toBottomOf="@id/lock_safy_label"
+        app:correctStateColor="@color/light_green"
+        app:wrongStateColor="@color/red"
+        app:normalStateColor="@color/white"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
